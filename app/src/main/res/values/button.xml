@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sigams_bg_color">#ffffff</color>
+    <color name="buttonColor">#303F9F</color>
+    <color name="button_text_colour">#ffffff</color>
+    <color name="normal_text_Color">#555555</color>
+
+    <style name="AppTheme.SingamsTheme">
+        <item name="android:windowBackground">@color/sigams_bg_color</item>
+        <item name="colorButtonNormal">@color/buttonColor</item>
+
+        <item name="android:textColor">@color/button_text_colour</item>
+
+
+    </style>
+
+    <style name="AppTheme.SingamsNormalTheme">
+        <item name="android:textColor">@color/normal_text_Color</item>
+        <item name="colorButtonNormal">@color/buttonColor</item>
+    </style>
+
+</resources>

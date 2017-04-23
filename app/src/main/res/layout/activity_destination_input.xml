@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="com.example.jeyanthasingam.busroutefinder.MapsInput"
+    app:umanoPanelHeight="0dp"
+    app:umanoShadowHeight="0dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_destination_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.jeyanthasingam.busroutefinder.DestinationInput">
+
+            <TextView
+                android:text="Starting Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView12"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="Destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:id="@+id/textView13"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_below="@+id/startIn"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="Find the route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:textColor="@color/button_text_colour"
+                android:layout_marginTop="19dp"
+                android:layout_below="@+id/DesIn"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/ic_blue_and_white_map_507x507"
+                android:id="@+id/desMap"
+                android:onClick="onDesMapClick"
+                android:layout_alignTop="@+id/DesIn"
+                android:layout_alignStart="@+id/startMap" />
+
+            <EditText
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/startIn"
+                android:paddingLeft="9dp"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawablePadding="9dp"
+                android:background="@drawable/box_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_below="@+id/textView12"
+                android:layout_width="250dp"
+                android:layout_toStartOf="@+id/startLocation" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawablePadding="9dp"
+                android:id="@+id/DesIn"
+                android:background="@drawable/box_back"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView13"
+                android:layout_alignStart="@+id/startIn" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/ic_blue_and_white_map_507x507"
+                android:id="@+id/startMap"
+                android:visibility="visible"
+                android:onClick="onStartMapClick"
+                android:layout_alignTop="@+id/startLocation"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/ic_device_gps_fixed"
+                android:id="@+id/desLocation"
+                android:background="@drawable/box_back"
+                android:onClick="onDesLocationClick"
+                android:layout_alignTop="@+id/DesIn"
+                android:layout_toEndOf="@+id/DesIn" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/ic_device_gps_fixed"
+                android:id="@+id/startLocation"
+                android:background="@drawable/box_back"
+                android:onClick="onStartLocationClick"
+                android:layout_below="@+id/textView12"
+                android:layout_toEndOf="@+id/textView12" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

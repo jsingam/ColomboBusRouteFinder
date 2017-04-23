@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_name"
+        android:icon="@mipmap/ic_action_17_512"
+        android:title="Help"
+        app:showAsAction="always"
+        android:orderInCategory="0"/>
+    <item
+        android:id="@+id/action_select"
+        android:icon="@mipmap/ic_action_done"
+        android:title="Select"
+        app:showAsAction="always"
+        android:orderInCategory="0"/>
+
+</menu>

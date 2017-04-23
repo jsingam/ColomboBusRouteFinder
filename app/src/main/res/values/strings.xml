@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Bus Route Finder</string>
+    <string name="ending_bus_stop_text">Ending Bus Stop</string>
+    <string name="starting_bus_stop_text">Starting Bus Stop</string>
+    <string name="find_the_bus_button_text">Find the Bus</string>
+    <string name="enter_the_bus_number_text">Enter the Bus Number</string>
+    <string name="find_the_route_text">Find the Route</string>
+    <string name="bus_stop_to_nbus_stop_text">Bus stop to \nBus stop</string>
+    <string name="bus_stop_to_nbus_stop">Bus stop to \nBus stop</string>
+    <string name="colombo_bus_nroute">Colombo Bus \nRoute</string>
+    <string name="location_to_ndestination">Location to \nDestination</string>
+    <string name="title_activity_sample_map">Map</string>
+    <string name="title_activity_maps_input">Map Input</string>
+    <string name="title_activity_bus_stops">Map</string>
+    <string name="Notification.Title">Are we there yet?</string>
+    <string name="Notification.Text">We\'re at %1$s!!!</string>
+    <string name="AreYouSure">Are you sure?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="Units.Degrees">\u00B0</string>
+
+    <string name="Label.Name">Name</string>
+    <string name="Label.Latitude">Latitude</string>
+    <string name="Label.Longitude">Longitude</string>
+    <string name="Label.Radius">Radius</string>
+    <string name="Label.AddGeofence">Add a Geofence</string>
+    <string name="Label.EmptyState">You do not have any trips currently. Add the destination that you want to go.\n\n\nWill we ever get there?! :]</string>
+    <string name="Button.DeleteGeofence">DELETE</string>
+    <string name="action_delete_all">Delete All Geofences</string>
+</resources>
